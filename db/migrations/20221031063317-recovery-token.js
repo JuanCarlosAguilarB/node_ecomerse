@@ -6,7 +6,7 @@ module.exports = {
  await queryInterface.addColumn(USER_TABLE,'recovery_token', {
   field: 'recovery_token',
   allowNull: true,
-  type: DataTypes.STRING
+  type: Sequelize.DataTypes.STRING
 });
   },
 
@@ -14,7 +14,7 @@ module.exports = {
     await queryInterface.removeColumn(USER_TABLE,'recovery_token', {
       field: 'recovery_token',
       allowNull: true,
-      type: DataTypes.STRING
+      type: Sequelize.DataTypes.STRING
     });
   }
 };
